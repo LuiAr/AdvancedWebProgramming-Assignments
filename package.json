@@ -4,7 +4,8 @@
   "description": "UCI r/place project",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "mocha tests.js"
   },
   "repository": {
     "type": "git",

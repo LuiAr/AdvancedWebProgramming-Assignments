@@ -6,7 +6,7 @@
 - Assignement 2
 
 ## Screenshot
-![Example screenshot](/public/img/website.png)
+![Screenshot](public/img/website.png)
 
 ## How to start server
 `npm run start` or `nodemon index.js`

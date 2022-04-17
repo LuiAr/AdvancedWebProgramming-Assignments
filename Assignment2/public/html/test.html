@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p/RLace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1>Hello to p/Rlace</h1>
+    
+    <div class="content">
+        <a href="img/rlace.png">Access the official logo of the p/Rlace</a><br><br>
+        <a href="js/test.js">Access test.js (it's fun you'll see)</a><br><br>
+        <a href="/">Main Page</a>
+
+        <h2>The incredible function</h2>
+        <form id="form">
+            <p>Enter your name: </p>
+            <input type="text" name="id" id="id" value="Your name">
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id='to-insert'></p>
+        
+        <img class="rlace-img" src="/img/rlace.png" alt="p/Rlace"><br>
+        <a href="/api/1">Access api</a>
+        <br><br>
+        <p class="ps">ps: thx to vincent for helping me setup the server</p>
+    </div>
+
+    <script>
+        const form = document.getElementById('form')
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            var data = document.getElementById('id').value;
+
+            fetch('/api/' + data).then(response => response.json()).then(data2 => {
+                document.getElementById('to-insert').innerHTML = "Hello " + data2['id'];
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

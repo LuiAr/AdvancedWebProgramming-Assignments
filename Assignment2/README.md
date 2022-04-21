@@ -3,7 +3,7 @@
 > Using that UI should result in different responses from your dynamic endpoint.
 
 ## General Information
-- Assignement 2
+- Assignment 2
 
 ## Screenshot
 ![Screenshot](public/img/website.png)
